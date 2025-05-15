@@ -8,6 +8,186 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="red">asas</div>
+    <header id="main-header">
+      <img
+        class="logo"
+        src="./assets/title-desktop.png"
+        alt="Loading..."
+        id="logo"
+      />
+    </header>
+    <div class="headline">
+      <div class="headline-main">
+        <img src="./assets/headline-mobile.png" alt="Loading..." id="logo2" />
+        <div class="headline-1">
+          <img src="./assets/fws-mobile.png" alt="Loading..." id="logo3" />
+        </div>
+        <div class="headline-2">
+          <img src="./assets/fwb-mobile.png" alt="Loading..." id="logo4" />
+        </div>
+      </div>
+    </div>
+    <div class="quote">
+      <div class="lh-1">
+        <span class="text-1">Tetap Optimis </span
+        ><span class="text-2">#MelihatHarapandi</span>
+      </div>
+      <div class="lh-1">
+        <span class="text-1">tahun 2021, dengan </span
+        ><span class="text-2">#JernihBerkomen-</span>
+      </div>
+      <div class="lh-1">
+        <span class="text-3">tar pada setiap artikel Kompas.com</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Raih Kesempatan Memenangkan :</div>
+      <div class="box-2">
+        <div class="box-item">
+          <div class="box-item-img">
+            <img src="./assets/item4.svg" alt="Loading..." />
+          </div>
+          <div class="box-item-text">Uang Elektronik Total Jutaan Rupiah</div>
+        </div>
+        <div class="box-item">
+          <div class="box-item-img">
+            <img src="./assets/item1.png" alt="Loading..." />
+          </div>
+          <div class="box-item-text">1 Unit Air Fryer</div>
+        </div>
+        <div class="box-item">
+          <div class="box-item-img">
+            <img src="./assets/item3.png" alt="Loading..." />
+          </div>
+          <div class="box-item-text">1 Unit UV Sterilizer Box</div>
+        </div>
+        <div class="box-item">
+          <div class="box-item-img">
+            <img src="./assets/item2.png" alt="Loading..." />
+          </div>
+          <div class="box-item-text">1 Unit Headphone Sports</div>
+        </div>
+      </div>
+      <div class="box-title2">
+        <span class="text-wb">Periode </span
+        ><span class="text-ob">15 Januari </span><span class="text-wb">-</span
+        ><span class="text-ob"> 17 April</span
+        ><span class="text-wb"> 2021</span>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="box-title-desktop">
+        <span class="text-wb">Periode </span
+        ><span class="text-ob">15 Januari </span><span class="text-wb">-</span
+        ><span class="text-ob"> 17 April</span
+        ><span class="text-wb"> 2021</span>
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="terms">
+        <div class="terms-title">Syarat dan Ketentuan</div>
+        <ul>
+          <li>
+            Kampanye #JernihBerkomentar hanya bisa diikuti oleh warga negara
+            indonesia (WNI).
+          </li>
+          <li>
+            Kampanye #JernihBerkomentar tidak berlaku untuk karyawan, anggota
+            keluarga dan kerabat karyawan Kompas Gramedia.
+          </li>
+          <li>
+            Pemenang dipilih berdasarkan komentar yang konstruktif, berdasarkan
+            fakta, dan tidak mengandung unsur SARA.
+          </li>
+          <li>
+            Pembaca yang terpilih sebagai pemenang akan dihubungi lewat email
+            dan diumumkan pada link https://info.kompas.com/campaign/
+            jernihberkomentar.
+          </li>
+          <li>
+            Setiap peserta hanya berkesempatan menjadi pemenang satu kali.
+          </li>
+          <li>
+            Keputusan pemenang ditentukan oleh tim Kompas.com dan bersifat
+            mutlak serta tidak dapat diganggu gugat.
+          </li>
+          <li>
+            Kompas.com berhak mengubah syarat dan ketentuan pemenang tanpa
+            pemberitahuan sebelumnya.
+          </li>
+          <li>Hadiah tidak dapat diuangkan.</li>
+          <li>
+            Kompas.com berhak membatalkan hadiah jika tidak ada konfirmasi dari
+            pemenang hingga tiga (3) hari setelah pengumuman.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="terms">
+        <div class="terms-title">Mekanisme</div>
+        <ul>
+          <li>
+            Peserta adalah pembaca yang telah terintegrasi dan memiliki akun di
+            Kompas.com
+          </li>
+          <li>
+            Peserta dapat menuliskan komentar sebanyak-banyaknya di kolom
+            komentar setiap artikel Kompas.com
+          </li>
+          <li>
+            Peserta wajib menyertakan tagar #JernihBerkomentar dan
+            #MelihatHarapan dalam setiap komentar yang ditulis.
+          </li>
+          <li>
+            Pemenang akan diumumkan 2 minggu sekali dan dapat dilihat melalui
+            link https://info.kompas.com/campaign/ jernihberkomentar
+          </li>
+          <li>
+            Periode kampanye #JernihBerkomentar #MelihatHarapan berlangsung dari
+            tanggal 15 Januari s.d 17 April 2021
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="h-50"></div>
   </body>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("main-header");
+      if (window.scrollY > 100) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    });
+  </script>
+  <script>
+    function updateLogo() {
+      const logo = document.getElementById("logo");
+      const logo2 = document.getElementById("logo2");
+      const logo3 = document.getElementById("logo3");
+      const logo4 = document.getElementById("logo4");
+
+      if (window.innerWidth >= 767) {
+        logo.src = "./assets/title-desktop.png";
+        logo2.src = "./assets/headline-desktop.png";
+        logo3.src = "./assets/fws-desktop.png";
+        logo4.src = "./assets/fwb-desktop.png";
+      } else {
+        logo.src = "./assets/title-mobile.svg";
+        logo2.src = "./assets/headline-mobile.png";
+        logo3.src = "./assets/fws-mobile.png";
+        logo4.src = "./assets/fwb-mobile.png";
+      }
+    }
+
+    // Run on load
+    updateLogo();
+
+    // Run on resize
+    window.addEventListener("resize", updateLogo);
+  </script>
 </html>
